@@ -29,4 +29,4 @@ def get_shop_list_by_dishes(cook_book, person_count):
           ingridients_dict[ingr['ingridient_name']]['quantity'] += ingr['quantity'] * person_count
   return ingridients_dict
 
-print('Задание_2:', '\n', '\n', get_shop_list_by_dishes(cookbook_read(), 2), sep = '')
+print('Задание_2:', '\n', '\n', get_shop_list_by_dishes(cookbook_read(), int(input('Введите кол-во персон: '))), sep='')
